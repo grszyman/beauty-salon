@@ -1,0 +1,12 @@
+# https://www.youtube.com/watch?v=26ztKL8UVHo
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/salon-db"
+    password: "salon-db"
+    username: "salon-db"
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    baseline-on-migrate: true

@@ -1,0 +1,12 @@
+# Use postgres/example user/password credentials
+version: '3.8'
+
+services:
+  db:
+    image: 'postgres:14.2-alpine'
+    container_name: salon-db
+    environment:
+      - POSTGRES_USER=salon-db
+      - POSTGRES_PASSWORD=salon-db
+    ports:
+      - "5432:5432"

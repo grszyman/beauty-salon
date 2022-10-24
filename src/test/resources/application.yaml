@@ -1,0 +1,12 @@
+# https://www.youtube.com/watch?v=26ztKL8UVHo
+
+spring:
+  datasource:
+    url: "jdbc:tc:postgresql:14.2-alpine:///"
+
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core: "DEBUG"
